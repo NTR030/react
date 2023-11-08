@@ -32,9 +32,16 @@
   - 可以使用没有JSX的React
  
 
+#### &&/|| 和三元运算符
+- && 渲染第一个为真的
+- || 渲染第一个为假的
+- 三元： `{num > 0 ? '' : ''}`
+
+
+
 
 ##### 样式
 - 内联：
   - `<div style={{color : 'red', font-size:'32px'}}></div>`
 - class
-  - `<div className='header'></div>`
+  - `<div className={`class1  ${_ ? '' : ''}`}></div>`
