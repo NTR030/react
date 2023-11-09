@@ -24,3 +24,14 @@
     <button className='btn'>{children}</button>
 }`
     - <Btn>-<Btn> 即可让中间的值为“-”
+   
+
+#### map指定长度循环渲染
+`
+{Array.from({length : 5},(_,i) => <option value={i + 1} key={i}>{i+1}</option>)}
+`
+
+#### 更新数组类型的state
+- state初始值为[]，`setArr(arr =>arr.concat(new) )`
+- state存在值，新增/改替数据 `setArr(arr => arr.toSpliced(index,1,new))`
+- 清空state中的值 `setArr(arr => arr.toSpliced(0,arr.length))`
